@@ -50,12 +50,20 @@
                                 {{ site.app_description }}
                             </p>
                         </div>
+
                         <div class="downloadButtonsContainer">
+                            <form action="https://formspree.io/xyynldow" method="POST">
+                                <input type="email" name="_replyto" placeholder="Enter your email">
+                                <input type="submit" value="Get Updates" style="background-color:#1d63ea;">
+                             </form>
+                        </div>
+
+                        <!-- <div class="downloadButtonsContainer">
                             {% if site.playstore_link %}
                                 <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="assets/playstore.png"></a>
                             {% endif %}
                             <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="assets/appstore.png"></a>
-                        </div>
+                        </div> -->
                     </div>
                     {% include features.html %}
                     {% include footer.html %}
